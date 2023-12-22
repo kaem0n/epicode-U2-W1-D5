@@ -1,0 +1,422 @@
+/* FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spectral:wght@400;700&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Spectral', serif; */
+
+/* GENERAL PROPERTIES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+.no-pointer {
+    cursor: auto;
+}
+
+/* HEADER PROPERTIES */
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1192px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#list-container {
+    display: flex;
+}
+
+.spacer { /* necessario per centrare come si deve tutti gli elementi della header */
+    flex: 1 0 auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+header button {
+    border: none;
+    background-color: #191919;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header section {
+    margin-top: 76px;
+    background-color: #ffc017;
+    height: 455px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+    z-index: 1;
+}
+
+#header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 550px;
+    height: 100%;
+    padding: 93px 0;
+}
+
+header section svg {
+    position: absolute;
+    right: 0;
+}
+
+h1 {
+    font-family: 'Spectral', serif;
+    font-size: 106px;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+header section button {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* MAIN PROPERTIES */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main svg {
+    cursor: pointer;
+}
+
+#trending, #articles {
+    margin: 0 auto;
+    max-width: 1192px;
+}
+
+#articles section {
+    max-width: 700px;
+}
+
+aside {
+    max-width: 400px;
+}
+
+/* PART 1 - TRENDING */
+
+#trending {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 326px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#trending-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+#trending-title svg {
+    margin-right: 10px;
+}
+
+#trending-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#trending-articles article {
+    width: 33.3334%;
+    margin-bottom: 24px;
+    display: flex;
+    padding-right: 32px;
+}
+
+.art-num {
+    font-size: 32px;
+    font-weight: 500;
+    margin-right: 16px;
+    color: #f2f2f2;
+}
+
+h4{
+    font-weight: 700;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+#trending-articles article a {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#trending-articles article > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#trending-articles article div div {
+    display: flex;
+    align-items: center;
+    color: #6B6B6B;
+}
+
+#trending-articles article div div svg {
+    margin-left: 4px;
+    height: 16px;
+}
+
+.author {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* PART 2 - ARTICLES */
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 68px;
+    width: 100%;
+}
+
+
+#articles section h4 {
+    font-size: 20px;
+}
+
+#articles section article {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.preview {
+    width: 200px;
+    height: 134px;
+    aspect-ratio: auto 200 / 134;
+    cursor: pointer;
+}
+
+#articles section article > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+}
+
+#articles section article span, #articles section article div div{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+p {
+    color: #6B6B6B;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+#articles section article div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #6B6B6B;
+}
+
+/* PART 3 - ASIDE */
+
+aside {
+    position: sticky;
+    top: 107px;
+}
+
+aside h4 {
+    margin-bottom: 16px;
+}
+
+aside div a {
+    font-size: 14px;
+    color: #1a8917;
+    margin-top: 14px;
+}
+
+aside div a:hover {
+    color: #6B6B6B;
+}
+
+aside footer a {
+    color: #6B6B6B;
+}
+
+aside div {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 32px;
+}
+
+aside div span {
+    background-color: #f2f2f2;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    border-radius: 20px;
+}
+
+aside div span a {
+    color: #191919;
+}
+
+footer {
+    padding: 24px 0;
+}
+
+footer a {
+    display: inline-block;
+    margin-right: 26px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* ANIMAZIONI */
+
+.yellow {
+    background-color: #ffc017;
+    transition: 500ms;
+}
+
+.white {
+    background-color: white;
+    transition: 500ms;
+}
+
+.black {
+    background-color: #191919;
+    transition: 500ms;
+}
+
+.green {
+    background-color: #1a8917;
+    transition: 500ms;
+}
+
+/* VISUALIZZAZIONE TABLET */
+
+@media screen and (max-width: 768px) {
+
+    nav, header section, main {
+        padding: 0 30px;
+    }
+
+    nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    header section {
+        margin-top: 67px;
+    }
+
+    main {
+        margin-top: 45px;
+    }
+
+    #trending-articles article {
+        width: 50%;
+    }
+
+    .author {
+        white-space: nowrap;
+    }
+
+    #articles {
+        flex-direction: column;
+    }
+
+    #n1 {
+        order: 2;
+    }
+
+    #n2 {
+        order: 1;
+    }
+
+    aside {
+        max-width: unset;
+    }
+
+    #articles section h4 {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    #expand {
+        display: none;
+    }
+
+    aside div span {
+        background-color: white;
+        border: 1px solid #f2f2f2;
+        color: #6B6B6B;
+        border-radius: 0;
+    }
+}
