@@ -425,6 +425,8 @@ footer a {
     }
 }
 
+/* VISUALIZZAZIONE MOBILE */
+
 @media screen and (max-width: 576px) {
     #mostro {
         display: none;
