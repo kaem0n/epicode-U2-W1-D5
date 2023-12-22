@@ -27,4 +27,4 @@ const cropSvg = function () {
     }
 }
 
-cropSvg() // ATTENZIONE: in fase di test riavviare la pagina dopo aver modificato la larghezza del viewport
+cropSvg() // ATTENZIONE: riavviare la pagina dopo aver modificato la larghezza del viewport
