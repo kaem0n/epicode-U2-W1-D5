@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 
 const svg = document.getElementById('mostro')
 const cropSvg = function () {
-    if (window.innerWidth === 768) {
+    if (window.innerWidth <= 1024) {
         svg.setAttribute('viewBox', '0 0 100 462')
     }
 }

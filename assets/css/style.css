@@ -361,7 +361,7 @@ footer a {
 
 /* VISUALIZZAZIONE TABLET */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     nav, header section, main {
         padding: 0 30px;
@@ -373,11 +373,15 @@ footer a {
     }
 
     header section {
-        margin-top: 67px;
+        margin-top: 66px;
     }
 
     main {
-        margin-top: 45px;
+        margin-top: 30px;
+    }
+
+    #trending {
+        height: auto;
     }
 
     #trending-articles article {
@@ -420,3 +424,31 @@ footer a {
         border-radius: 0;
     }
 }
+
+@media screen and (max-width: 576px) {
+    #mostro {
+        display: none;
+    }
+
+    ul li {
+        display: none;
+    }
+
+    #last {
+        display: block;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    #trending-articles {
+        flex-direction: column;
+    }
+
+    #trending-articles article {
+        width: 100%;
+    }
+}
+
+/* NB: Tocca modificare più volte il viewport per far funzionare tutto nel modo corretto */
